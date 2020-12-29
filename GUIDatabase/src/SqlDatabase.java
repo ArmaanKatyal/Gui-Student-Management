@@ -7,7 +7,7 @@ public class SqlDatabase {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/javadb";
             String uname = "root";
-            String password = "armaan2408";
+            String password = "yourPass";
             Connection conn = DriverManager.getConnection(url, uname, password);
             Statement stmt = conn.createStatement();
             String sql = String.format("insert into students_new values(%d,\"%s\",%d,\"%s\")",id,name,age,course);
@@ -25,7 +25,7 @@ public class SqlDatabase {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/javadb";
             String uname = "root";
-            String password = "armaan2408";
+            String password = "your pass";
             Connection conn = DriverManager.getConnection(url, uname, password);
             Statement stmt = conn.createStatement();
             String sql = String.format("delete from students_new where id=%d",id);
@@ -43,7 +43,7 @@ public class SqlDatabase {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 String url = "jdbc:mysql://localhost:3306/javadb";
                 String uname = "root";
-                String password = "armaan2408";
+                String password = "your pass";
                 Connection conn = DriverManager.getConnection(url, uname, password);
                 Statement stmt = conn.createStatement();
                 String sql = String.format("update students_new set name=\"%s\" where id=%d",name,id);
@@ -60,7 +60,7 @@ public class SqlDatabase {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 String url = "jdbc:mysql://localhost:3306/javadb";
                 String uname = "root";
-                String password = "armaan2408";
+                String password = "your pass";
                 Connection conn = DriverManager.getConnection(url, uname, password);
                 Statement stmt = conn.createStatement();
                 String sql = String.format("update students_new set age=%d where id=%d",age,id);
@@ -77,7 +77,7 @@ public class SqlDatabase {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 String url = "jdbc:mysql://localhost:3306/javadb";
                 String uname = "root";
-                String password = "armaan2408";
+                String password = "your pass";
                 Connection conn = DriverManager.getConnection(url, uname, password);
                 Statement stmt = conn.createStatement();
                 String sql = String.format("update students_new set course=\"%s\" where id=%d",course,id);
